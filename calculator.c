@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
   char operator;
   float result;
 
-  printf("Enter calculation:\n\n");
+  printf("Enter calculation:\n");
   scanf("%f %c %f", &v_One, &operator, & v_Two);
 
   switch(operator)
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
       break;
     default: goto fail;
     }
-  printf("%.9g%c%.9g =  %.6g\n\n",v_One,operator, v_Two, result);
+  printf("%.9g%c%.9g =  %.6g\n",v_One,operator, v_Two, result);
   goto exit;
  fail:
   printf("Fail.\n");
